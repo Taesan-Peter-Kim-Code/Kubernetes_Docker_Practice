@@ -13,6 +13,8 @@ $ kubectl apply -f tutorial.yaml
 service/tutorial created
 deployment.apps/tutorial created
 ```
+- What is .yaml file?
+The .yaml file allows you to configure and document all your application's service dependencies(other services, cache, databases, queues, etc.). In other words, it defines services, networks, and volumes for a Docker application. Using docker-compose CLI command, you can create and start one or more containers for each dependency with a single command(docker-compose up).
 
 - Check service:
 ```
