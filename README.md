@@ -34,3 +34,6 @@ This is due to Docker Desktop taking care of exposing service ports on the host 
 
 ## Speed up the develop-test inner loop
 we have seen how to deploy and access an application in the cluster. However, the development cycle consists of developers modifying the code of an application and testing it continuously. 
+
+- Created a main.go file and ran:
+`$ cat main.go`
