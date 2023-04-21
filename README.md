@@ -13,7 +13,7 @@ $ kubectl apply -f tutorial.yaml
 service/tutorial created
 deployment.apps/tutorial created
 ```
-- What is .yaml file?
+- What is .yaml file:
 The .yaml file allows you to configure and document all your application's service dependencies(other services, cache, databases, queues, etc.). In other words, it defines services, networks, and volumes for a Docker application. Using docker-compose CLI command, you can create and start one or more containers for each dependency with a single command(docker-compose up).
 
 - Check service:
@@ -31,3 +31,6 @@ What needs to be noticed here is that service access is trivial as if running di
 This is due to Docker Desktop taking care of exposing service ports on the host to make them directly accessible on it. This is done via the additional controller installed previously.
 
 **Vpnkit-controller** is a port forwarding service which opens ports on the host and forwards connections transparently to the pods inside the VM. It is being used for forwarding connections to LoadBalancer type services deployed in Kubernetes.
+
+## Speed up the develop-test inner loop
+we have seen how to deploy and access an application in the cluster. However, the development cycle consists of developers modifying the code of an application and testing it continuously. 
